@@ -3,25 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Photo</title>
+    <title>About Me</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            background-color: #f4f4f4;
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4; /* Light grey background */
+            color: #333; /* Dark grey text */
             margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
             padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333; /* Dark grey header */
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        ul li {
+            margin: 10px 0;
+        }
+        ul li span {
+            font-weight: bold;
+        }
+        .image-container {
+            text-align: center;
+            margin-top: 20px;
         }
         img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 70%;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
     </style>
 </head>
 <body>
-    <h1>My Photo</h1>
-    <img src="https://i.imgur.com/47UWLv2.jpg" alt="My Photo">
+    <div class="container">
+        <h1>About Me</h1>
+        <ul>
+            <li><span>Hi:</span> I’m @tsblhsn (Tasibul Hasan).</li>
+            <li><span>Interest:</span> I’m interested in writing, music, and exploring the unknowns of science and space.</li>
+            <li><span>Learning:</span> I’m currently learning Python & JavaScript.</li>
+            <li><span>Collaboration:</span> I’m looking to collaborate on open-source projects.</li>
+            <li><span>Contact:</span> How to reach me: <a href="mailto:sewabarfi@gmail.com">sewabarfi@gmail.com</a></li>
+            <li><span>Social Media:</span> You can follow me on <a href="https://x.com/tsblhsn" target="_blank">Twitter</a>.</li>
+        </ul>
+
+        <!-- Image Section -->
+        <div class="image-container">
+            <img src="https://pbs.twimg.com/media/FwUlPqaWAAIuUdc?format=jpg&name=medium" alt="My Image">
+        </div>
+    </div>
 </body>
 </html>
