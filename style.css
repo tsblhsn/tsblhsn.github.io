@@ -1,12 +1,10 @@
-/* Global Styles */
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f9;
-    color: #333;
-    scroll-behavior: smooth; /* Smooth scrolling */
+    background-color: #f4f4f9; /* Light background for better readability */
+    color: #333; /* Dark text for better contrast */
 }
 
 .container {
@@ -16,30 +14,13 @@ body {
     background: #ffffff;
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    animation: fadeIn 1s ease-in-out; /* Fade-in effect */
 }
 
 h1 {
     text-align: center;
-    color: #2c3e50;
+    color: #2c3e50; /* Dark blue for a professional look */
 }
 
-/* Profile Image Styles */
-.profile-pic {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    object-fit: cover;
-    display: block;
-    margin: 0 auto;
-    transition: transform 0.3s ease-in-out; /* Hover effect */
-}
-
-.profile-pic:hover {
-    transform: scale(1.1); /* Image zoom effect on hover */
-}
-
-/* List Styles */
 ul {
     list-style: none;
     padding: 0;
@@ -53,33 +34,14 @@ ul li {
 
 ul li span {
     font-weight: bold;
-    color: #34495e;
+    color: #34495e; /* Slightly lighter color for the labels */
 }
 
-/* Link Styles */
 a {
-    color: #3498db;
+    color: #3498db; /* Link color */
     text-decoration: none;
 }
 
 a:hover {
     text-decoration: underline;
-    color: #2980b9;
-}
-
-/* Fade-in animation */
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-/* Hover Effect on List Items */
-ul li a:hover {
-    color: #2980b9;
-    font-weight: bold;
-    transition: color 0.3s ease-in-out;
 }
