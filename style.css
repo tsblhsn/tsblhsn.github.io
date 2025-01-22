@@ -1,50 +1,85 @@
-/* General Styles */
+/* Global Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
     margin: 0;
     padding: 0;
-    line-height: 1.6;
-    background-color: #f4f4f4;
+    background-color: #f4f4f9;
     color: #333;
+    scroll-behavior: smooth; /* Smooth scrolling */
 }
 
-/* Header */
-header {
-    background: #0078d7;
-    color: #fff;
+.container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out; /* Fade-in effect */
+}
+
+h1 {
     text-align: center;
-    padding: 1rem 0;
+    color: #2c3e50;
 }
 
-header h1 {
-    margin: 0;
+/* Profile Image Styles */
+.profile-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+    transition: transform 0.3s ease-in-out; /* Hover effect */
 }
 
-header p {
-    font-size: 1.2rem;
+.profile-pic:hover {
+    transform: scale(1.1); /* Image zoom effect on hover */
 }
 
-/* Main Content */
-main {
-    padding: 20px;
+/* List Styles */
+ul {
+    list-style: none;
+    padding: 0;
 }
 
-.about, .contact {
-    background: #fff;
-    margin: 20px 0;
-    padding: 15px;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+ul li {
+    margin: 15px 0;
+    font-size: 18px;
+    line-height: 1.8;
 }
 
-.about h2, .contact h2 {
-    color: #0078d7;
+ul li span {
+    font-weight: bold;
+    color: #34495e;
 }
 
-/* Footer */
-footer {
-    text-align: center;
-    padding: 10px 0;
-    background: #333;
-    color: #fff;
+/* Link Styles */
+a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #2980b9;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Hover Effect on List Items */
+ul li a:hover {
+    color: #2980b9;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
 }
