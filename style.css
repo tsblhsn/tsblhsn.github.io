@@ -1,95 +1,189 @@
-/* Global Styles */
+/* Global Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body {
-    font-family: 'Noto Sans Bengali', sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #1e272e, #485460);
+    color: #ecf0f1;
     line-height: 1.6;
-    font-size: 16px;
+    font-size: 18px;
     padding: 20px;
-}
-
-h1, h2, h3 {
-    font-family: 'Noto Sans Bengali', sans-serif;
-    font-weight: 600;
-    color: #2c3e50;
+    animation: fadeIn 1.5s ease-in-out;
 }
 
 /* Header Styling */
 header {
-    background-color: #34495e;
-    color: #fff;
-    padding: 20px 0;
+    background: rgba(52, 73, 94, 0.9);
+    padding: 20px;
     text-align: center;
-    margin-bottom: 30px;
+    border-bottom: 3px solid #00a8ff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    animation: slideDown 1.2s ease-in-out;
 }
 
-header nav ul {
-    list-style: none;
-}
-
-header nav ul li {
-    display: inline-block;
-    margin: 0 20px;
-}
-
-header nav ul li a {
-    text-decoration: none;
+header h1 {
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
     color: #fff;
-    font-weight: 500;
-    font-size: 18px;
+    animation: textGlow 2s infinite alternate;
 }
 
-header nav ul li a:hover {
-    color: #ecf0f1;
+/* Navigation Bar */
+nav ul {
+    list-style: none;
+    text-align: center;
+    margin-top: 10px;
 }
 
-/* Main Section Styling */
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #00a8ff;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px 15px;
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background: #00a8ff;
+    color: #fff;
+    box-shadow: 0 0 15px #00a8ff;
+}
+
+/* Sections */
 section {
-    margin-bottom: 40px;
+    margin-bottom: 50px;
+    text-align: center;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    animation: fadeInUp 1.5s ease-in-out;
 }
 
 h2 {
-    font-size: 28px;
-    color: #2c3e50;
-    margin-bottom: 20px;
+    font-size: 32px;
+    color: #00a8ff;
+    margin-bottom: 15px;
 }
 
+p {
+    font-size: 20px;
+    color: #ecf0f1;
+}
+
+/* Article Cards */
 article {
-    background-color: #fff;
+    background: #2d3436;
     padding: 20px;
-    margin-bottom: 20px;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+article:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4);
 }
 
 article h3 {
     font-size: 24px;
-    margin-bottom: 15px;
-    color: #34495e;
+    color: #00a8ff;
+    margin-bottom: 10px;
 }
 
 article p {
     font-size: 16px;
-    line-height: 1.7;
-    color: #555;
+    color: #dcdde1;
 }
 
-/* Footer Styling */
+/* Footer */
 footer {
-    background-color: #34495e;
-    color: #fff;
+    background: rgba(52, 73, 94, 0.9);
+    color: white;
     text-align: center;
     padding: 15px;
     margin-top: 30px;
-    font-size: 14px;
+    font-size: 16px;
+    border-top: 3px solid #00a8ff;
+    animation: slideUp 1.2s ease-in-out;
 }
 
-footer p {
-    margin: 0;
+footer a {
+    color: #00a8ff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
 }
+
+footer a:hover {
+    text-decoration: underline;
+    color: #fff;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes textGlow {
+    from {
+        text-shadow: 0 0 5px #00a8ff;
+    }
+    to {
+        text-shadow: 0 0 20px #00a8ff;
+    }
+    }
