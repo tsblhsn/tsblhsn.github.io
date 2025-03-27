@@ -4,133 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tasibul Hasan</title>
-    <link rel="stylesheet" href="style.css">
     <style>
         /* Google Font */
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
 
-        /* Basic Styling */
-        * {
+        body {
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
+            background: linear-gradient(135deg, maroon, #F5F5DC);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
             font-family: 'Poppins', sans-serif;
-        }
-        body {
-            background: linear-gradient(to right, #ff7eb3, #ff758c);
-            color: #fff;
-            text-align: center;
-            overflow-x: hidden;
+            overflow: hidden;
         }
 
-        /* Header Animation */
-        header {
-            background: rgba(255, 255, 255, 0.1);
-            padding: 20px;
-            font-size: 24px;
+        .logo {
+            font-size: 3rem;
             font-weight: bold;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            animation: slideDown 1s ease-in-out;
-        }
-        @keyframes slideDown {
-            from { transform: translateY(-100px); opacity: 0; }
-            to { transform: translateY(0); opacity: 1; }
+            position: relative;
+            display: flex;
+            align-items: center;
         }
 
-        /* Profile Image */
-        .profile {
-            margin: 40px auto;
-            text-align: center;
-        }
-        .profile img {
-            width: 180px;
-            height: 180px;
-            border-radius: 50%;
-            border: 5px solid #fff;
-            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
-            transition: transform 0.5s ease-in-out;
-        }
-        .profile img:hover {
-            transform: scale(1.1);
+        .emoji {
+            font-size: 3rem;
+            animation: wave 1.5s infinite alternate;
+            margin-right: 10px;
         }
 
-        /* Description Animation */
-        .description {
-            max-width: 600px;
-            margin: auto;
-            padding: 20px;
-            font-size: 18px;
-            opacity: 0;
-            animation: fadeIn 1.5s ease-in-out forwards;
-        }
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
+        @keyframes wave {
+            0% { transform: rotate(0deg); }            100% { transform: rotate(-15deg); }
         }
 
-        /* Buttons */
-        .btn-container {
-            margin-top: 20px;
-        }
-        .btn {
-            text-decoration: none;
-            background: #fff;
-            color: #ff758c;
-            padding: 10px 20px;
-            border-radius: 25px;
-            font-weight: bold;
-            transition: all 0.3s ease-in-out;
+        .logo span {
             display: inline-block;
-            margin: 5px;
-            box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
-        }
-        .btn:hover {
-            background: #ff758c;
-            color: #fff;
-            transform: scale(1.1);
+            transition: transform 0.3s ease-in-out;
         }
 
-        /* Footer */
-        footer {
-            margin-top: 30px;
-            padding: 10px;
-            font-size: 14px;
-            background: rgba(255, 255, 255, 0.1);
+        .logo:hover span:nth-child(1) { transform: rotate(-10deg) scale(1.1); color: red; }
+        .logo:hover span:nth-child(2) { transform: rotate(10deg) scale(1.1); color: black; }
+
+        .tashibul {
+            color: red;
+            margin-right: 5px;
         }
 
+        .hasan {
+            color: black;
+        }
     </style>
 </head>
 <body>
 
-<header>
-    Tasibul Hasan
-</header>
-
-<!-- Profile Section -->
-<div class="profile">
-    <img src="your-image-url.jpg" alt="Tasibul Hasan">
-</div>
-
-<!-- Description Section -->
-<div class="description">
-    <p>
-        Tasibul Hasan is a Bangladeshi entrepreneur, web developer, and filmmaker. 
-        He is the founder of Tuine Cloud, a fashion brand, and has developed multiple websites. 
-        With a passion for creativity, he is working on a time-travel-based film project.
-    </p>
-</div>
-
-<!-- Buttons -->
-<div class="btn-container">
-    <a href="https://www.facebook.com/TasibulHasan" class="btn">Facebook</a>
-    <a href="https://www.instagram.com/tsblhsn" class="btn">Instagram</a>
-    <a href="mailto:tsblhsn.veilborne@gmail.com" class="btn">Email</a>
-</div>
-
-<footer>
-    &copy; 2025 Tasibul Hasan
-</footer>
+    <div class="logo">
+        <div class="emoji"> ʕ•́ᴥ•̀ʔっ </div>
+        <span class="tasibul">Tasibul</span>
+        <span class="hasan">Hasan</span>
+    </div>
 
 </body>
 </html>
