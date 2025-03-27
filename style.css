@@ -6,62 +6,32 @@
     <title>Tasibul Hasan</title>
     <style>
         /* Google Font */
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
 
         body {
             margin: 0;
             padding: 0;
-            background: linear-gradient(135deg, maroon, #F5F5DC);
+            background-color: maroon;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
-            font-family: 'Poppins', sans-serif;
+            font-family: 'Roboto', sans-serif;
             overflow: hidden;
         }
 
         .logo {
-            font-size: 3rem;
-            font-weight: bold;
-            position: relative;
-            display: flex;
-            align-items: center;
-        }
-
-        .emoji {
-            font-size: 3rem;
-            animation: wave 1.5s infinite alternate;
-            margin-right: 10px;
-        }
-
-        @keyframes wave {
-            0% { transform: rotate(0deg); }            100% { transform: rotate(-15deg); }
-        }
-
-        .logo span {
-            display: inline-block;
-            transition: transform 0.3s ease-in-out;
-        }
-
-        .logo:hover span:nth-child(1) { transform: rotate(-10deg) scale(1.1); color: red; }
-        .logo:hover span:nth-child(2) { transform: rotate(10deg) scale(1.1); color: black; }
-
-        .tashibul {
-            color: red;
-            margin-right: 5px;
-        }
-
-        .hasan {
-            color: black;
+            font-size: 2.5rem;
+            font-weight: normal;
+            color: #F5F5DC; /* Cream color */
+            text-align: center;
         }
     </style>
 </head>
 <body>
 
     <div class="logo">
-        <div class="emoji"> ʕ•́ᴥ•̀ʔっ </div>
-        <span class="tasibul">Tasibul</span>
-        <span class="hasan">Hasan</span>
+        Tasibul Hasan
     </div>
 
 </body>
