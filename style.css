@@ -1,38 +1,22 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tasibul Hasan</title>
-    <style>
-        /* Google Font */
-        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
 
-        body {
-            margin: 0;
-            padding: 0;
-            background-color: maroon;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            font-family: 'Roboto', sans-serif;
-            overflow: hidden;
-        }
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
 
-        .logo {
-            font-size: 2.5rem;
-            font-weight: normal;
-            color: #F5F5DC; /* Cream color */
-            text-align: center;
-        }
-    </style>
-</head>
-<body>
+body {
+    margin: 0;
+    padding: 0;
+    background-color: maroon; /* Maroon background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    overflow: hidden;
+}
 
-    <div class="logo">
-        Tasibul Hasan
-    </div>
-
-</body>
-</html>
+.logo {
+    font-size: 3rem; /* Adjusted font size */
+    font-weight: normal;
+    color: #F5F5DC; /* Cream color */
+    text-align: center;
+}
