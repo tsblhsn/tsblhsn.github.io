@@ -1,22 +1,111 @@
-
-/* Google Font */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
-
-body {
+/* Reset some default styles */
+* {
     margin: 0;
     padding: 0;
-    background-color: maroon; /* Maroon background */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    font-family: 'Roboto', sans-serif;
-    overflow: hidden;
+    box-sizing: border-box;
 }
 
-.logo {
-    font-size: 3rem; /* Adjusted font size */
-    font-weight: normal;
-    color: #F5F5DC; /* Cream color */
+/* General styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: maroon;
+    color: cream;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    color: cream;
+}
+
+a {
+    color: cream;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Header styles */
+header {
     text-align: center;
+    padding: 40px;
+}
+
+header h1 {
+    font-size: 3em;
+    font-family: 'Arial', sans-serif;
+}
+
+header p {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+/* Profile section */
+.profile {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+/* Tuine Cloud section */
+.tuine-cloud {
+    background-color: #2f2f2f;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 8px;
+}
+
+.tuine-cloud ul {
+    list-style-type: none;
+}
+
+.tuine-cloud li {
+    margin-bottom: 10px;
+}
+
+/* Interests section */
+.interests {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+/* Philosophical Thoughts section */
+.philosophy {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.philosophy ul {
+    list-style-type: none;
+}
+
+.philosophy li {
+    margin-bottom: 10px;
+}
+
+/* Contact section */
+.contact {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #2f2f2f;
+    color: cream;
+}
+
+footer p {
+    font-size: 1.2em;
 }
