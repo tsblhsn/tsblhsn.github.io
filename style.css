@@ -7,9 +7,9 @@
 
 /* Body Styling */
 body {
-    font-family: 'Helvetica', Arial, sans-serif;
+    font-family: 'Helvetica', Arial, sans-serif; /* Helvetica font with Arial fallback */
     background-color: #2E4A62; /* Dark sea background */
-    color: #FFFFFF; /* Bright white text */
+    color: #FFFFFF; /* Bright white font color */
     line-height: 1.6;
 }
 
@@ -66,7 +66,7 @@ section ul li {
 
 /* Links */
 a {
-    color: #FFFFFF;
+    color: #FFFFFF; /* White links to match font color */
     text-decoration: none;
     border-bottom: 1px solid #FFFFFF;
     transition: border-color 0.3s ease;
@@ -80,7 +80,7 @@ a:hover {
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #1A3A52;
+    background-color: #1A3A52; /* Slightly darker shade for footer */
     font-size: 0.9rem;
     margin-top: 40px;
 }
