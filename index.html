@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Official website of Tasin Ahmed (whtasin), student at Milestone College, founder of Claye BD, aspiring Prime Minister of Bangladesh, writer, and philosopher.">
+    <meta name="keywords" content="Tasin Ahmed, whtasin, Milestone College, Claye BD, Prime Minister of Bangladesh dream, time travel, philosophy, photography, writing">
+    <meta name="author" content="Tasin Ahmed">
+    <title>Tasin Ahmed (whtasin) - Founder of Claye BD</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome for Social Media Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- CSS Design (Internal) -->
+    <style>
+        /* CSS Variables for Cream Theme */
+        :root {
+            --bg-cream: #FDFBF7;
+            --bg-cream-dark: #F4EFE6;
+            --text-main: #2C3338;
+            --text-muted: #5C6770;
+            --accent-color: #A67C52; /* Elegant earthy brown/gold */
+            --card-bg: #FFFFFF;
+            --shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            --transition: all 0.3s ease;
+        }
+
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-cream);
+            color: var(--text-main);
+            line-height: 1.7;
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+            color: var(--text-main);
+        }
+
+        /* Container */
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Typography & Layout */
+        p {
+            color: var(--text-muted);
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+        }
+
+        p:last-child {
+            margin-bottom: 0;
+        }
+
+        .section-intro {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .divider {
+            border: 0;
+            height: 1px;
+            background-image: linear-gradient(to right, rgba(166, 124, 82, 0), rgba(166, 124, 82, 0.3), rgba(166, 124, 82, 0));
+            margin: 25px 0;
+        }
+
+        .inline-link {
+            color: var(--accent-color);
+            text-decoration: none;
+            font-weight: 600;
+            border-bottom: 1px solid transparent;
+            transition: var(--transition);
+        }
+
+        .inline-link:hover {
+            border-bottom: 1px solid var(--accent-color);
+        }
+
+        /* Hero Section */
+        .hero-section {
+            min-height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background: linear-gradient(135deg, var(--bg-cream) 0%, var(--bg-cream-dark) 100%);
+            padding: 100px 20px;
+            border-bottom: 1px solid rgba(166, 124, 82, 0.1);
+        }
+
+        .hero-section h1 {
+            font-size: 4.5rem;
+            margin-bottom: 10px;
+            letter-spacing: -1px;
+        }
+
+        .hero-section .username {
+            font-family: 'Inter', sans-serif;
+            font-size: 1.5rem;
+            color: var(--text-muted);
+            margin-bottom: 20px;
+            font-weight: 400;
+        }
+
+        .hero-section .subtitle {
+            font-size: 1.1rem;
+            color: var(--accent-color);
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        /* Sections */
+        section {
+            padding: 80px 0;
+        }
+
+        section:nth-child(even) {
+            background-color: var(--bg-cream-dark);
+        }
+
+        section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+            text-align: center;
+            position: relative;
+        }
+
+        section h2::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 3px;
+            background-color: var(--accent-color);
+            margin: 15px auto 0;
+            border-radius: 2px;
+        }
+
+        /* Content Boxes */
+        .content-box {
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: var(--shadow);
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+            transition: var(--transition);
+        }
+
+        .content-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+        }
+
+        /* Lists */
+        .feature-list {
+            list-style: none;
+            margin-top: 20px;
+            text-align: left;
+            display: inline-block;
+        }
+
+        .feature-list li {
+            padding: 10px 0;
+            border-bottom: 1px solid #eee;
+            color: var(--text-muted);
+        }
+
+        .feature-list li:last-child {
+            border-bottom: none;
+        }
+
+        .feature-list strong {
+            color: var(--text-main);
+        }
+
+        /* Grid Cards (For Philosophy) */
+        .grid-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: var(--card-bg);
+            padding: 30px 20px;
+            border-radius: 10px;
+            text-align: center;
+            font-weight: 600;
+            color: var(--text-main);
+            box-shadow: var(--shadow);
+            border-top: 3px solid transparent;
+            transition: var(--transition);
+            cursor: pointer;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            border-top-color: var(--accent-color);
+            box-shadow: 0 15px 35px rgba(166, 124, 82, 0.15);
+        }
+
+        /* Social Icon Buttons */
+        .social-links {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .icon-links {
+            gap: 20px;
+        }
+
+        .icon-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 55px;
+            height: 55px;
+            background-color: transparent;
+            color: var(--text-main);
+            border: 1px solid var(--accent-color);
+            border-radius: 50%;
+            font-size: 1.5rem;
+            transition: var(--transition);
+            text-decoration: none;
+        }
+
+        .icon-btn:hover {
+            background-color: var(--accent-color);
+            color: #fff;
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(166, 124, 82, 0.3);
+            border-color: var(--accent-color);
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--text-main);
+            color: #fff;
+            text-align: center;
+            padding: 60px 20px;
+            margin-top: 40px;
+        }
+
+        footer h2 {
+            color: #fff;
+        }
+
+        footer h2::after {
+            display: none;
+        }
+
+        .email-link {
+            color: var(--accent-color);
+            text-decoration: none;
+            font-size: 1.2rem;
+            transition: var(--transition);
+        }
+
+        .email-link:hover {
+            color: #fff;
+        }
+
+        .copyright {
+            margin-top: 30px;
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.5);
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animate-fade-in {
+            opacity: 0;
+            animation: fadeIn 0.8s ease forwards;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero-section h1 {
+                font-size: 3rem;
+            }
+            
+            section h2 {
+                font-size: 2rem;
+            }
+            
+            .grid-cards {
+                grid-template-columns: 1fr;
+            }
+            
+            .icon-btn {
+                width: 45px;
+                height: 45px;
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="hero-section">
+        <div class="container animate-fade-in">
+            <h1>Tasin Ahmed</h1>
+            <div class="username">@whtasin</div>
+            <p class="subtitle">Founder of Claye BD | Student | Philosopher | Writer</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="about animate-fade-in" style="animation-delay: 0.2s;">
+            <div class="container">
+                <h2>About Tasin</h2>
+                <div class="content-box">
+                    <p>Born on February 12, 2007, currently residing in Dhaka, Bangladesh, Tasin Ahmed is a dynamic individual balancing his academic life as a student at <strong>Milestone College</strong> and his entrepreneurial journey as the founder of Claye BD. Driven by a profound sense of leadership and purpose, Tasin harbors a deeply rooted dream of becoming the <strong>Prime Minister of Bangladesh</strong>. Alongside his grand vision for the nation, he is passionately invested in exploring the concepts of time travel, creating films, and developing original philosophical ideas.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="tuine-cloud animate-fade-in" style="animation-delay: 0.3s;">
+            <div class="container">
+                <h2>Claye BD</h2>
+                <div class="content-box">
+                    <p>Claye BD is a multifaceted brand founded by Tasin, operating in the following sectors:</p>
+                    <ul class="feature-list">
+                        <li><strong>Fashion:</strong> T-shirts, pants, shoes</li>
+                        <li><strong>Food:</strong> Biscuits, drinks</li>
+                        <li><strong>Essential Goods:</strong> Salt, sugar, cement, and more</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="philosophy animate-fade-in" style="animation-delay: 0.4s;">
+            <div class="container">
+                <h2>Philosophical Ideas</h2>
+                <p class="section-intro">Tasin has developed a series of original philosophical concepts, inspired by great thinkers. Key ideas include:</p>
+                <div class="grid-cards">
+                    <div class="card">The Paradox of Completion</div>
+                    <div class="card">The Observer’s Curse</div>
+                    <div class="card">There Is No True Ending</div>
+                    <div class="card">The Life Not Chosen</div>
+                    <div class="card">The Relationship Between Truth and Falsehood</div>
+                    <div class="card">Are We the Owners of Our Own Thoughts?</div>
+                    <div class="card">Echoes of the Future</div>
+                    <div class="card">The Trap of Choice</div>
+                    <div class="card">The Power of Forgetting</div>
+                    <div class="card">The Nature of Reality</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="interests animate-fade-in" style="animation-delay: 0.5s;">
+            <div class="container">
+                <h2>Interests & Future Vision</h2>
+                <div class="content-box">
+                    <p>Tasin is fascinated by the concept of time travel and firmly believes it will become a reality by 2035. Plans are in motion to create original cinematic works, blending creativity, leadership, and philosophical inquiry to inspire the masses.</p>
+                    <hr class="divider">
+                    <p>Beyond these pursuits, Tasin is an avid writer who loves crafting compelling scripts and stories. Photography is another deep passion; capturing moments from unique perspectives. You can explore this visual journey and view the latest photography on <a href="https://instagram.com/whtasin_" target="_blank" class="inline-link">Instagram</a>.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="social animate-fade-in" style="animation-delay: 0.6s;">
+            <div class="container">
+                <h2>Connect</h2>
+                <p class="section-intro">Find Tasin across all platforms:</p>
+                <div class="social-links icon-links">
+                    <a href="https://facebook.com/cogito" target="_blank" class="icon-btn" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://x.com/whtasin" target="_blank" class="icon-btn" aria-label="X (Twitter)"><i class="fab fa-x-twitter"></i></a>
+                    <a href="https://instagram.com/whtasin_" target="_blank" class="icon-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://tiktok.com/@wh.tasin" target="_blank" class="icon-btn" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="animate-fade-in" style="animation-delay: 0.7s;">
+        <div class="container">
+            <h2>Let's Talk</h2>
+            <p>Email: <a href="mailto:a.tasin@icloud.com" class="email-link">a.tasin@icloud.com</a></p>
+            <p class="copyright">&copy; 2026 Tasin Ahmed. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
