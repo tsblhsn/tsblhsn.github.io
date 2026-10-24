@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Tasibul Hasan | @tsblhsn</title>
+<meta name="description" content="Humanities student, writer and observer from Bangladesh. Creator of BioBuc.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;1,500&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--abyss:#021a19;--deep:#06302d;--teal:#2bb3a6;--mist:#9fd1ca;--foam:#e4f6f2;
+--serif:"Playfair Display",Georgia,serif;--sans:"Manrope",system-ui,sans-serif}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:64px;overflow-x:hidden}
+body{background:var(--abyss);color:var(--mist);font:400 1.05rem/1.7 var(--sans);width:100%}
+a{color:inherit}
+a:focus-visible,button:focus-visible{outline:2px solid var(--teal);outline-offset:4px}
+.aurora{position:fixed;inset:0;z-index:-1;overflow:hidden;pointer-events:none}
+.aurora i{position:absolute;border-radius:50%;filter:blur(90px);opacity:.5;animation:drift 22s ease-in-out infinite alternate}
+.aurora i:nth-child(1){width:60vmax;height:60vmax;background:#0d5c56;top:-20vmax;left:-15vmax}
+.aurora i:nth-child(2){width:45vmax;height:45vmax;background:#127a70;bottom:-20vmax;right:-15vmax;animation-duration:30s}
+@keyframes drift{to{transform:translate(12vmax,8vmax) scale(1.2)}}
+nav{position:sticky;top:0;z-index:5;display:flex;gap:1.6rem;padding:1rem 1.4rem;overflow-x:auto;background:rgba(2,26,25,.78);backdrop-filter:blur(10px);white-space:nowrap;font-size:.9rem;scrollbar-width:none}
+nav a{text-decoration:none;color:var(--mist);transition:color .2s}
+nav a:hover{color:var(--foam)}
+nav b{margin-right:auto;font:500 1.3rem var(--serif);color:var(--foam)}
+section{padding:4.5rem 1.4rem;max-width:1080px;margin:auto}
+h2{font:500 clamp(1.9rem,6vw,3rem)/1.2 var(--serif);color:var(--foam);margin-bottom:1.6rem}
+.hero{min-height:100svh;display:grid;gap:2rem;align-items:center;padding:2.5rem max(1.4rem,calc((100% - 1080px)/2)) 6rem;position:relative;overflow:hidden}
+.hero>div:first-child{position:relative;z-index:2;margin-top:-4.2rem}
+@media(min-width:800px){.hero{grid-template-columns:1fr 1fr}.hero>div:first-child{margin-top:0}}
+h1{font:500 clamp(2.9rem,13.5vw,6.8rem)/1 var(--serif);color:var(--foam);letter-spacing:-.01em}
+.line{display:block;overflow:hidden;padding-bottom:.14em}
+.split span{display:inline-block;transform:translateY(105%);animation:rise 1s cubic-bezier(.2,.8,.2,1) forwards;animation-delay:calc(var(--i)*70ms + .2s)}
+@keyframes rise{to{transform:none}}
+.role{margin-top:1.4rem;font-size:1.05rem;color:var(--teal);opacity:0;animation:fade 1s 1.3s forwards}
+@keyframes fade{to{opacity:1}}
+.socials{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:1.4rem;opacity:0;animation:fade 1s 1.6s forwards}
+.socials a{padding:.35rem .9rem;border:1px solid #1d6b64;border-radius:99px;font-size:.85rem;text-decoration:none;transition:.25s}
+.socials a:hover{background:var(--teal);color:var(--abyss);border-color:var(--teal)}
+.shot{position:relative;order:-1;width:min(54%,220px);margin-left:auto;z-index:1}
+.app{position:absolute;left:1.4rem;top:7.2rem;z-index:3;display:flex;flex-direction:column;align-items:center;gap:.35rem;text-decoration:none;color:var(--foam);font:600 .75rem var(--sans);transition:transform .25s}
+.app:hover{transform:translateY(-4px)}
+.app svg{width:64px;height:auto;display:block}
+@media(min-width:800px){.shot{order:0;width:min(100%,340px);margin-left:-70px;justify-self:end}}
+.shot img{display:block;width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:150px 8px 8px 8px;filter:saturate(.8) contrast(1.05);animation:unveil 1.6s cubic-bezier(.7,0,.2,1) .3s both}
+@keyframes unveil{from{clip-path:inset(100% 0 0 0);transform:scale(1.12)}to{clip-path:inset(0);transform:none}}
+.shot::after{content:"";position:absolute;inset:0;border-radius:150px 8px 8px 8px;background:linear-gradient(180deg,rgba(15,118,110,.18),rgba(2,26,25,.75));pointer-events:none}
+.shot::before{content:"";position:absolute;inset:16px -16px -16px 16px;border:1px solid var(--teal);border-radius:150px 8px 8px 8px;opacity:.7}
+.badge{position:absolute;left:-30px;bottom:14%;width:100px;z-index:3;animation:spin 26s linear infinite;fill:var(--foam);font:600 10.5px var(--sans)}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes float{50%{transform:translateY(-10px)}}
+@keyframes breathe{50%{transform:scale(1.04);opacity:.35}}
+.wave{position:absolute;left:0;bottom:-1px;width:200%;height:70px;animation:flow 14s linear infinite}
+.wave path{fill:var(--deep)}
+@keyframes flow{to{transform:translateX(-50%)}}
+.band{background:var(--deep)}
+.band>section{max-width:1080px}
+.about p{max-width:62ch;margin-bottom:1.2rem}
+.about strong{color:var(--foam);font-weight:600}
+.bb-head{display:flex;align-items:center;gap:1rem;margin-bottom:1.6rem}
+.bb-head svg{width:56px;height:auto;flex:none}
+.bb-head h2{margin:0}
+.bb-list{list-style:none;padding:0;margin:1.6rem 0 2rem;display:grid;gap:.9rem;max-width:62ch}
+.bb-list li{padding-left:1.1rem;border-left:2px solid var(--teal)}
+.bb-list b{color:var(--foam);font-weight:600}
+.bb-open{display:inline-block;padding:.6rem 1.4rem;border:1px solid var(--teal);border-radius:99px;text-decoration:none;color:var(--foam);font-weight:600;transition:.25s}
+.bb-open:hover{background:var(--teal);color:var(--abyss)}
+.marquee{overflow:hidden;border-block:1px solid #14504a;margin:2.2rem 0}
+.marquee div{display:flex;gap:2.5rem;width:max-content;padding:1rem 0;animation:scroll 40s linear infinite;font:italic 500 1.3rem var(--serif);color:var(--foam)}
+.marquee:hover div{animation-play-state:paused}
+@keyframes scroll{to{transform:translateX(-50%)}}
+.thought{display:grid;gap:.6rem;padding:2rem 0;border-top:1px solid #14504a}
+@media(min-width:800px){.thought{grid-template-columns:.8fr 2fr;gap:2rem}}
+.thought h3{font:600 .95rem var(--sans);color:var(--teal)}
+.thought p{font:italic 500 clamp(1.05rem,3vw,1.35rem)/1.6 var(--serif);color:var(--foam)}
+.gal{display:flex;gap:1rem;overflow-x:auto;scroll-snap-type:x mandatory;padding:0 1.4rem 1.5rem;cursor:grab;scrollbar-color:var(--teal) transparent}
+.gal img{height:min(52svh,460px);width:auto;border-radius:14px;scroll-snap-align:center;transition:transform .5s cubic-bezier(.2,.8,.2,1),filter .5s;filter:saturate(.85)}
+.gal img:hover{transform:translateY(-8px) scale(1.02);filter:none}
+.mail{display:inline-block;margin-top:.5rem;font:500 clamp(1.5rem,5vw,2.4rem) var(--serif);color:var(--foam);text-decoration:none;border-bottom:1px solid var(--teal);transition:color .25s}
+.mail:hover{color:var(--teal)}
+footer{padding:2rem 1.4rem 3rem;text-align:center;font-size:.85rem}
+.rv{opacity:0;transform:translateY(24px);transition:opacity .9s,transform .9s cubic-bezier(.2,.8,.2,1)}
+.rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.shot img{clip-path:none}
+.split span{transform:none}.role,.socials{opacity:1}.rv{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<div class="aurora" aria-hidden="true"><i></i><i></i></div>
+<nav>
+<b>Tasibul</b>
+<a href="#biobuc">BioBuc</a><a href="#metasoco">Metasoco</a><a href="#philosophy">Philosophical Thoughts</a><a href="#photography">Photography</a><a href="mailto:sewabarfi@gmail.com">Contact</a>
+</nav>
+
+<header class="hero">
+<div>
+<h1 aria-label="Tasibul Hasan"><span class="line split">Tasibul</span><span class="line split">Hasan</span></h1>
+<p class="role">Humanities Student • Writer • Observer</p>
+<div class="socials">
+<a href="https://www.instagram.com/tsblhsn/" target="_blank" rel="noopener">Instagram</a>
+<a href="https://x.com/tsblhsn" target="_blank" rel="noopener">Twitter</a>
+</div>
+
+</div>
+<div class="shot"><img src="IMG_5585_Original.jpeg" alt="Portrait of Tasibul Hasan">
+<svg class="badge" viewBox="0 0 120 120" aria-hidden="true"><circle cx="60" cy="60" r="59" fill="#021a19" fill-opacity=".78"/><defs><path id="ring" d="M60 60m-43 0a43 43 0 1 1 86 0a43 43 0 1 1-86 0"/></defs><text><textPath href="#ring" textLength="268" lengthAdjust="spacing">Humanities • Writing • Observing •</textPath></text><circle cx="60" cy="60" r="3.5" fill="#2bb3a6"/></svg></div>
+<a class="app" href="/biobuc/" aria-label="Open BioBuc"><svg viewBox="0 0 110 120" aria-hidden="true"><path d="M20 12H56C80 12 92 24 92 39C92 49 87 56 80 59C91 63 97 71 97 83C97 101 83 112 58 112H20Z" fill="#ffe51a" stroke="#1f4fb0" stroke-width="12" stroke-linejoin="round"/><path d="M42 30H54C62 30 66 34 66 39C66 44 62 48 54 48H42ZM42 68H56C65 68 70 72 70 80C70 88 65 94 56 94H42Z" fill="#1f4fb0"/></svg>BioBuc</a>
+<svg class="wave" viewBox="0 0 1200 70" preserveAspectRatio="none" aria-hidden="true"><path d="M0 35Q150 0 300 35T600 35T900 35T1200 35V70H0Z"/></svg>
+</header>
+
+<div class="band">
+<section id="biobuc" class="about rv">
+<div class="bb-head">
+<svg viewBox="0 0 110 120" aria-hidden="true"><path d="M20 12H56C80 12 92 24 92 39C92 49 87 56 80 59C91 63 97 71 97 83C97 101 83 112 58 112H20Z" fill="#ffe51a" stroke="#1f4fb0" stroke-width="12" stroke-linejoin="round"/><path d="M42 30H54C62 30 66 34 66 39C66 44 62 48 54 48H42ZM42 68H56C65 68 70 72 70 80C70 88 65 94 56 94H42Z" fill="#1f4fb0"/></svg>
+<h2>BioBuc</h2>
+</div>
+<p>BioBuc is a photo-sharing social app I built myself. It is a quiet, simple space to share photos, follow people and talk privately, with a dark teal look that matches this site. It opens full screen on your phone and can be added to your Home Screen like a real app.</p>
+<ul class="bb-list">
+<li><b>Photo posts.</b> Share a photo with a caption and #hashtags, like it, comment on it, and save it for later.</li>
+<li><b>Stories.</b> Post a photo story with background music. It stays for 24 hours, then moves to your private archive.</li>
+<li><b>Private messages.</b> Chats are end-to-end encrypted, and the keys stay on your own device.</li>
+<li><b>People.</b> Search for profiles, follow and follow back, see your followers and following, and share your profile link.</li>
+<li><b>Control.</b> Get notifications for likes, comments and new followers, block accounts, and edit your profile and account details.</li>
+</ul>
+<a class="bb-open" href="/biobuc/">Open BioBuc</a>
+</section>
+</div>
+
+<section id="metasoco" class="rv">
+<h2>Metasoco</h2>
+<p style="max-width:62ch">An evolving ecosystem of creative and conceptual ventures. It reflects my vision to blend digital aesthetics, thoughtful media production and premium lifestyle essentials into one artistic space.</p>
+<div class="marquee" aria-hidden="true"><div id="mq"></div></div>
+</section>
+
+<div class="band">
+<section id="philosophy">
+<h2 class="rv">Philosophical thoughts</h2>
+<p class="rv" style="margin-bottom:1.5rem">Original thoughts and social observations from my personal space.</p>
+<div class="thought rv"><h3>Self-Reliance &amp; Progress</h3><p>“Don’t rely on others’ advice. It’s meant to help you progress, but not surpass them. Toppers don’t share notes with equals, only those behind. They study together to solve tough problems, then grind harder alone. Life’s a race; keep running your own path till the end.”</p></div>
+<div class="thought rv"><h3>The Power of Language</h3><p>“English hides our ignorance. In Bangladesh, fluent English wows people. Even if you know little, present in English &amp; get applause. 95% fear English. Master it, rule them!”</p></div>
+<div class="thought rv"><h3>Perception of the Law</h3><p>“Benefits of being in a legal profession are that people don’t mess with you easily. People will presume that you are a bad person. They don’t dare to commit fraud with you.”</p></div>
+<div class="thought rv"><h3>Lineage &amp; Social Power</h3><p>“More children, larger lineage, greater power in society. Powerful people have many kids, reject family planning. To dominate with family, embrace this. Shed modern notions, they’re used by the powerful to mislead us.”</p></div>
+<div class="thought rv"><h3>Smartness Over Knowledge</h3><p>“For ruling the society, we do not need to become a knowledgeable person. We need to be just smart. Knowledgeable people cannot achieve anything in their lives, but smart people can achieve everything in their lives.”</p></div>
+<div class="thought rv"><h3>Human Flaws &amp; Redemption</h3><p>“If you see no flaws in someone, you don’t truly know them. Everyone has shortcomings; no one is perfect. Humans are here to minimize sin, seek repentance, and earn God’s forgiveness before leaving this world.”</p></div>
+</section>
+</div>
+
+<section id="photography" style="padding-bottom:1.5rem">
+<h2 class="rv">Visual archives</h2>
+<p class="rv">Swipe or drag to explore my photography.</p>
+</section>
+<div class="gal" id="gal"></div>
+
+<section id="contact" class="rv" style="text-align:center">
+<h2>Let’s share some thoughts</h2>
+<a class="mail" href="mailto:sewabarfi@gmail.com">Send an email</a>
+</section>
+<footer>© 2026 Tasibul Hasan · @tsblhsn</footer>
+
+<script>
+document.querySelectorAll(".split").forEach(function(el){
+  var n=0;
+  el.innerHTML=[...el.textContent].map(function(c){return '<span style="--i:'+(n++)+'">'+c+'</span>'}).join("");
+});
+var words=["Creative Writing","Media Production","Photography Archives","Philosophical Forums","Premium Apparel","Digital Aesthetics","Cultural Explorations","Solitary Melodies","Thought Leadership","Concept Designs","Lifestyle Essentials","Artistic Curation"];
+document.getElementById("mq").innerHTML=words.concat(words).map(function(w){return "<span>"+w+"</span>"}).join("");
+var ids=["0999","1001","1002","1003","1004","1005","1006","1009","1010","1011","1012","1013","1014","1016","1019","1020","1021","1022","1023","1024","1025","1026"];
+var gal=document.getElementById("gal");
+gal.innerHTML=ids.map(function(n){return '<img src="IMG_'+n+'.jpeg" alt="Photograph by Tasibul Hasan" loading="lazy" draggable="false">'}).join("");
+var down=false,sx=0,sl=0;
+gal.addEventListener("pointerdown",function(e){if(e.pointerType!=="mouse")return;down=true;sx=e.clientX;sl=gal.scrollLeft;gal.style.scrollSnapType="none";gal.style.cursor="grabbing"});
+addEventListener("pointerup",function(){if(!down)return;down=false;gal.style.scrollSnapType="";gal.style.cursor=""});
+addEventListener("pointermove",function(e){if(down)gal.scrollLeft=sl-(e.clientX-sx)});
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}})},{threshold:.15});
+document.querySelectorAll(".rv").forEach(function(el){io.observe(el)});
+</script>
+</body>
+</html>
